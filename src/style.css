@@ -3,6 +3,41 @@
     padding: 0;
 }
 
-#container {
+body {
+
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
     
+    min-width: 1024px;
+    height: 250px;
+    
+    background: url(img/header-bg-tiled.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+#header-title {
+    z-index: 2;
+    width: 450px;
+    
+    background: url(img/header-left.png);
+    background-size: cover;
+}
+
+#header-mid {
+    z-index: 1;
+    width: 450px;
+    
+    margin-left: -150px;
+    
+    background: url(img/header-mid.png);
+    background-size: cover;
+}
+
+#container {
+    width: 100%;
 }
