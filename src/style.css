@@ -16,6 +16,7 @@ header {
     height: 250px;
     
     background: url(img/header-bg-tiled.png);
+    background-position: center;
     background-size: contain;
     background-repeat: repeat-x;
 }
@@ -39,7 +40,17 @@ header {
 }
 
 #container {
+    min-height: 2000px;
+        
+    background: black url(img/background.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
 
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer {
