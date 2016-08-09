@@ -3,6 +3,25 @@
     padding: 0;
 }
 
+@font-face {
+	font-family: "PTSans";
+	src: url(fonts/PTSans.ttf);
+}
+
+@font-face {
+    font-family: SourceCodePro-Light;
+    src: url(fonts/SourceCodePro-Light.otf);
+}
+    
+@font-face {
+    font-family: SourceCodePro-Medium;
+    src: url(fonts/SourceCodePro-Medium.otf);
+}
+
+.noselect {
+    user-select: none;
+}
+
 body {
 
 }
@@ -13,17 +32,20 @@ header {
     flex-direction: row;
     
     min-width: 1024px;
-    height: 250px;
-    
-    background: url(img/header-bg-tiled.png);
+    height: 200px;
+
+    background: red;
+    /*background: url(img/header-bg-tiled.png);
     background-position: center;
-    background-size: contain;
-    background-repeat: repeat-x;
+    background-size: 50%;
+    background-repeat: repeat-x;*/
+    
+    box-shadow: 0px 10px 59px 6px rgba(0, 0, 0, 0.42);
 }
 
 #header-title {
     z-index: 2;
-    width: 450px;
+    width: 350px;
     
     background: url(img/header-left.png);
     background-size: cover;
@@ -31,9 +53,9 @@ header {
 
 #header-mid {
     z-index: 1;
-    width: 450px;
+    width: 360px;
     
-    margin-left: -150px;
+    margin-left: -110px;
     
     background: url(img/header-mid.png);
     background-size: cover;
@@ -41,16 +63,94 @@ header {
 
 #container {
     min-height: 2000px;
-        
+    
     background: black url(img/background.png);
-    background-position: center top;
     background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#mtop {
+    height: 100px;
+    
+    background: blue;
+    box-shadow: inset 0px 18px 40px 0px rgba(0, 0, 0, 0.6);
+}
+
+#mleft {
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 300px;
+}
+
+.mleft-room {
+    display: flex;
+    flex-direction: row;
+    
+    /*height: 60px;*/
+    
+    transition: 0.2s;
+    background: rgb(60, 63, 65);
+}
+
+.mleft-room:hover {
+    cursor: pointer;
+    background: rgb(46, 48, 49);
+    box-shadow: inset 0px 0px 70px -16px rgba(0,0,0,0.5);
+}
+
+.mleft-room-icon {
+    width: 40px;
+    height: 40px;
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    background: red;
+}
+
+.mleft-room-item {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.mleft-room-title {
+    margin-top: 2px;
+    
+    color: rgb(225, 225, 225);
+    font-family: PTSans, Arial;
+    font-size: 12pt;
+}
+
+.mleft-room-status {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+    color: rgb(154, 148, 148);
+    font-family: SourceCodePro-Medium, Arial;
+    font-size: 9pt;
+}
+
+.mleft-room-container {
+    display: none;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.mleft-button {
+    
 }
 
 #content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 footer {
