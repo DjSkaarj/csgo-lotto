@@ -111,8 +111,6 @@ header {
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
-    
-    background: red;
 }
 
 .mleft-room-item {
@@ -146,10 +144,23 @@ header {
 }
 
 .mleft-button {
+    display: flex;
+    flex-direction: row;
+    
     padding: 2px 0;
     transition: 0.2s;
     background: rgb(69, 75, 80);
     border-bottom: 2px solid rgb(30, 30, 30);
+    
+}
+
+.mleft-button-title {
+    margin-top: 17px;
+    margin-left: 10px;
+    
+    color: rgb(225, 225, 225);
+    font-family: PTSans, Arial;
+    font-size: 16pt;
 }
 
 .mleft-button:hover {
