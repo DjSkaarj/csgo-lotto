@@ -13,75 +13,104 @@
         <script type="text/javascript" src="menu.js"></script>
     </head>
     <body>
-        <header>
+        <!--<header>
             <div id="header-title"></div>
             <div id="header-mid"></div>
-        </header>
+        </header>!-->
         <div id="container">
             <div id="background"></div>
             <nav id="mtop"></nav>
             <nav id="mleft">
-                <nav class="mleft-button" id="switch">
-                    <div class="mleft-icon" style="background-image: url(img/icon_toleft.png); background-size: contain"></div>
-                    <div class="mleft-button-title">Скрыть</div>
+                <nav class="mleft-button" id="lswitch">
+                    <div class="menu-icon" style="background-image: url(img/icon_toleft.png)"></div>
+                    <h1>Скрыть</h1>
                 </nav>
-                <nav class="mleft-room">
-                    <div class="mleft-icon"></div>
-                    <div class="mleft-room-item">
-                        <div class="mleft-room-title">Placeholder name</div>
-                        <div class="mleft-room-status">Placeholder text</div>
-                        <div class="mleft-room-container"></div>
+                <nav class="room">
+                    <div class="menu-icon"></div>
+                    <div class="room-item">
+                        <h1>Placeholder name</h1>
+                        <h2>Placeholder text</h2>
+                        <div class="room-container"></div>
                     </div>
                 </nav>
-                <nav class="mleft-room">
-                    <div class="mleft-icon"></div>
-                    <div class="mleft-room-item">
-                        <div class="mleft-room-title">Placeholder name</div>
-                        <div class="mleft-room-status">Placeholder text</div>
-                        <div class="mleft-room-container"></div>
+                <nav class="room">
+                    <div class="menu-icon"></div>
+                    <div class="room-item">
+                        <h1>Placeholder name</h1>
+                        <h2>Placeholder text</h2>
+                        <div class="room-container"></div>
                     </div>
                 </nav>
-                <nav class="mleft-room">
-                    <div class="mleft-icon"></div>
-                    <div class="mleft-room-item">
-                        <div class="mleft-room-title">Placeholder name</div>
-                        <div class="mleft-room-status">Placeholder text</div>
-                        <div class="mleft-room-container"></div>
+                <nav class="room">
+                    <div class="menu-icon"></div>
+                    <div class="room-item">
+                        <h1>Placeholder name</h1>
+                        <h2>Placeholder text</h2>
+                        <div class="room-container"></div>
                     </div>
                 </nav>
-                <nav class="mleft-room">
-                    <div class="mleft-icon"></div>
-                    <div class="mleft-room-item">
-                        <div class="mleft-room-title">Placeholder name</div>
-                        <div class="mleft-room-status">Placeholder text</div>
-                        <div class="mleft-room-container"></div>
+                <nav class="room">
+                    <div class="menu-icon"></div>
+                    <div class="room-item">
+                        <h1>Placeholder name</h1>
+                        <h2>Placeholder text</h2>
+                        <div class="room-container"></div>
                     </div>
                 </nav>
-                <nav class="mleft-room">
-                    <div class="mleft-icon"></div>
-                    <div class="mleft-room-item">
-                        <div class="mleft-room-title">Placeholder name</div>
-                        <div class="mleft-room-status">Placeholder text</div>
-                        <div class="mleft-room-container"></div>
+                <nav class="room">
+                    <div class="menu-icon"></div>
+                    <div class="room-item">
+                        <h1>Placeholder name</h1>
+                        <h2>Placeholder text</h2>
+                        <div class="room-container"></div>
                     </div>
                 </nav>
                 <nav class="mleft-button">
-                    <div class="mleft-icon" style="background-image: url(img/icon_home.png); background-size: contain"></div>
-                    <div class="mleft-button-title">На главную</div>
+                    <div class="menu-icon" style="background-image: url(img/icon_home.png)"></div>
+                    <h1>На главную</h1>
                 </nav>
                 <nav class="mleft-button">
-                    <div class="mleft-icon" style="background-image: url(img/icon_faq.png); background-size: contain"></div>
-                    <div class="mleft-button-title">F.A.Q.</div>
+                    <div class="menu-icon" style="background-image: url(img/icon_faq.png)"></div>
+                    <h1>F.A.Q.</h1>
                 </nav>
                 <nav class="mleft-button">
-                    <div class="mleft-icon" style="background-image: url(img/icon_support.png); background-size: contain"></div>
-                    <div class="mleft-button-title">Поддержка</div>
+                    <div class="menu-icon" style="background-image: url(img/icon_support.png)"></div>
+                    <h1>Поддержка</h1>
                 </nav>
                 <nav class="mleft-button">
-                    <div class="mleft-icon" style="background-image: url(img/icon_games.png); background-size: contain"></div>
-                    <div class="mleft-button-title">История игр</div>
+                    <div class="menu-icon" style="background-image: url(img/icon_games.png)"></div>
+                    <h1>История игр</h1>
                 </nav>
             </nav>
+            <div id="content">
+                <div id="mainspace-container">
+                    <div id="mainspace"></div>
+                </div>
+                <div id="mright">
+                    <nav id="profile">
+                        <nav id="profile-main">
+                            <div id="profile-textinfo">
+                                <h1>MlgGamer</h1>
+                                <h2>Баланс: <span id="credits">0 &#8381;</span></h2>
+                                <h2>Игр: <span id="games">0</span></h2>
+                            </div>
+                            <div id="profile-avatar" style="background-image: url(img/test_avatar.png)"></div>
+                        </nav>
+                        <nav class="mright-button">
+                            <div class="menu-icon" style="background-image: url(img/icon_money.png)"></div>
+                            <h1>Пополнить баланс</h1>
+                        </nav>
+                        <nav class="mright-button">
+                            <div class="menu-icon" style="background-image: url(img/icon_profile.png)"></div>
+                            <h1>Профиль</h1>
+                        </nav>
+                        <nav class="mright-button">
+                            <div class="menu-icon" style="background-image: url(img/icon_pgames.png)"></div>
+                            <h1>Мои игры</h1>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
         </div>
         <footer></footer>
     </body>

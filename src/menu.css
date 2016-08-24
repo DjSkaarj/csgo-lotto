@@ -1,42 +1,55 @@
 #mtop {
-    min-width: 1024px;
     height: 100px;
     
-    background: blue;
-    box-shadow: inset 0px 18px 40px 0px rgba(0, 0, 0, 0.6);
+    background: rgb(69, 75, 80);
+    box-shadow: inset 0px 0px 50px 5px rgba(0, 0, 0, 0.6);
+    border-top: 2px solid rgb(30, 30, 30);
+    border-bottom: 2px solid rgb(30, 30, 30);
+}
+
+#mleft, #mright {
+    width: 300px;
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
 }
 
 #mleft {
-    width: 300px;
+    position: absolute;
+    z-index: 2;
+    border-right: 2px solid rgba(30, 30, 30, 0.8);
+    
+    background-image: url(img/menu-bg.png);
+    background-size: cover;
+    background-position: center;
 }
 
-.mleft-room {
+.room {
     display: flex;
     flex-direction: row;
     
     /*height: 60px;*/
     
     transition: 0.2s;
-    background: rgb(60, 63, 65);
+    background: rgba(60, 63, 65, 0);
     border-bottom: 2px solid rgb(30, 30, 30);
 }
 
-.mleft-room:hover {
+.room:hover, .mleft-button:hover, .mright-button:hover {
     cursor: pointer;
-    background: rgb(46, 48, 49);
     box-shadow: inset 0px 0px 70px -16px rgba(0,0,0,0.5);
 }
 
-.mleft-icon {
+.menu-icon {
     width: 40px;
     height: 40px;
     
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
+    
+    background-size: cover;
 }
 
-.mleft-room-item {
+.room-item {
     display: flex;
     flex-direction: column;
     
@@ -44,49 +57,114 @@
     margin-left: 10px;
 }
 
-.mleft-room-title {
+.room h1 {
     margin-top: 2px;
     
     color: rgb(225, 225, 225);
     font-family: PTSans, Arial;
     font-size: 12pt;
+    font-weight: 100;
 }
 
-.mleft-room-status {
+.room h2 {
     margin-top: 5px;
     
     color: rgb(154, 148, 148);
     font-family: SourceCodePro-Medium, Arial;
     font-size: 9pt;
+    font-weight: 100;
 }
 
-.mleft-room-container {
+.room-container {
     display: none;
     margin-bottom: 10px;
     height: 100px;
 }
 
-.mleft-button {
+.mleft-button, .mright-button {
     display: flex;
     flex-direction: row;
     
     padding: 2px 0;
     transition: 0.2s;
-    background: rgb(69, 75, 80);
-    border-bottom: 2px solid rgb(30, 30, 30);
+    border-bottom: 2px solid rgba(30, 30, 30, 0.8);
 }
 
-.mleft-button-title {
+.mleft-button:hover, .mright-button:hover {
+    background: rgba(46, 48, 49, 0.2);
+}
+
+.mleft-button h1, .mright-button h1 {
     margin-top: 17px;
     margin-left: 10px;
     
     color: rgb(225, 225, 225);
+    text-shadow: 0px 0px 20px rgb(30, 30, 30);
     font-family: PTSans, Arial;
     font-size: 16pt;
+    font-weight: 100;
 }
 
-.mleft-button:hover {
-    background: rgb(46, 56, 64);
-    box-shadow: inset 0px 0px 70px -16px rgba(0,0,0,0.5);
-    cursor: pointer;
+.mright-button {
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    border-left: 2px solid rgba(30, 30, 30, 0.8);
+}
+
+#profile {
+    background-image: url(img/menu-bg2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#profile-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    height: 140px;
+    border-left: 2px solid rgb(30, 30, 30);
+    border-bottom: 2px solid rgb(30, 30, 30);
+    cursor: default;
+    /*background: rgb(46, 56, 64);*/
+    box-shadow: inset 0px 0px 70px -16px rgba(0, 0, 0, 0.5);
+}
+
+#profile-main:hover {}
+
+#profile-textinfo {
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 130px;
+}
+
+#profile-textinfo h1, #profile-textinfo h2 {
+    color: rgb(225, 225, 225);
+    font-family: PTSans, Arial;
+    text-shadow: 0px 0px 20px rgb(30, 30, 30);
+}
+
+#profile-textinfo h1 {
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+
+#profile-textinfo h2 {
+    color: rgb(185, 185, 185);
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+#profile-avatar {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    
+    background-size: contain;
+    border-radius: 15px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
